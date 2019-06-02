@@ -2,4 +2,6 @@ version: 0.2
 phases:
  build:
    commands:
-     - aws s3 sync --delete . "s3://www.stellarspectra.co.uk"
+   - rm -rf .git
+   - rm buildspec.yml 
+   - aws s3 sync --delete . "s3://www.stellarspectra.co.uk"
