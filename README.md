@@ -1,6 +1,6 @@
 
 ## Run site in nginx on Docker
-> docker run --name stellarspectra -p 80:80 -v C:\Development\repos\stellarspectra-website:/usr/share/nginx/html:ro nginx
+> docker run --rm --name stellarspectra -p 80:80 -v C:\Development\repos\stellarspectra-website:/usr/share/nginx/html:ro nginx
 
 ## Open in browser
 > http://localhost/index.html
