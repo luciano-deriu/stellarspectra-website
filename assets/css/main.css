@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(all.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
 /*
@@ -2084,7 +2084,6 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2220,15 +2219,6 @@ input, select, textarea {
 		border-bottom: none;
 		position: relative;
 	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
 
 		.icon > .label {
 			display: none;
@@ -2807,6 +2797,26 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
+			.features li.style1 {
+				color: #efa8b0;
+			}
+
+			.features li.style2 {
+				color: #c79cc8;
+			}
+
+			.features li.style3 {
+				color: #a89cc8;
+			}
+
+			.features li.style4 {
+				color: #9bb2e1;
+			}
+
+			.features li.style5 {
+				color: #8cc9f0;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.features li {
@@ -3101,7 +3111,7 @@ input, select, textarea {
 					display: block;
 					margin: 0 auto;
 					max-width: 75%;
-					max-height: 100px;
+					max-height: 10em;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3111,9 +3121,12 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 4em 4em 3em 4em ;
 				}
 
+				#header.alt .logo img {
+					max-height: 9em;
+				}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3123,7 +3136,11 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 3em 3em 2em 3em ;
+				}
+				
+				#header.alt .logo img {
+					max-height: 8em;
 				}
 
 		}
@@ -3144,13 +3161,16 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 2.5em 2em 1em 2em ;
 				}
 
 					#header.alt h1 {
 						font-size: 2.5em;
 					}
 
+					#header.alt .logo img {
+						max-height: 8.5em;
+					}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -3160,7 +3180,11 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 2.5em 1.5em 1em 1.5em ;
+				}
+
+				#header.alt .logo img {
+					max-height: 8em;
 				}
 
 		}
@@ -3172,9 +3196,12 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 2.5em 1em 0.5em 1em ;
 				}
 
+				#header.alt .logo img {
+					max-height: 7.5em;
+				}
 		}
 
 		body.is-preload #header.alt > * {
